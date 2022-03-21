@@ -1,0 +1,27 @@
+{
+  "name": "micro-frontend-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badamrussell/micro-frontend-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/badamrussell/micro-frontend-project/issues"
+  },
+  "homepage": "https://github.com/badamrussell/micro-frontend-project#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "react": "^17.0.2",
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "create-react-app": "^5.0.0"
+  }
+}
