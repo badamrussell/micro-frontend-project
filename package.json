@@ -4,7 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "git clean -Xfd",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:music": "cd music && npm run build",
+    "build:welcome": "cd welcome && npm run build",
+    "build:bootstrap:watch": "cd bootstrap && npm run build:watch",
+    "install:music": "cd music && npm install",
+    "install:welcome": "cd welcome && npm install",
+    "install:bootstrap": "cd bootstrap && npm install",
+    "install:all": "npm-run-all install:music install:welcome install:bootstrap",
+    "dev:bootstrap": "npm-run-all build:music build:welcome --parallel build:bootstrap:watch web-server",
+    "dev:welcome": "cd welcome && npm run serve",
+    "dev:music": "cd music && npm run serve",
+    "web-server": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +29,7 @@
   },
   "homepage": "https://github.com/badamrussell/micro-frontend-project#readme",
   "dependencies": {
-    "express": "^4.17.3",
+    "express": "^4.18.1",
     "react": "^17.0.2",
     "vue": "^3.2.31"
   },
