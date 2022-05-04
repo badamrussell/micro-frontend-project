@@ -9,6 +9,7 @@
     "build:music": "cd music && npm run build",
     "build:welcome": "cd welcome && npm run build",
     "build:bootstrap:watch": "cd bootstrap && npm run build:watch",
+    "build:bootstrap": "cd bootstrap && npm run build",
     "install:music": "cd music && npm install",
     "install:welcome": "cd welcome && npm install",
     "install:bootstrap": "cd bootstrap && npm install",
